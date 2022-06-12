@@ -15,5 +15,7 @@ namespace FoodStockChecker.Data
         }
 
         public DbSet<FoodStockChecker.Models.food> food { get; set; }
+
+        public DbSet<FoodStockChecker.Models.Recipe> Recipe { get; set; }
     }
 }
