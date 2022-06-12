@@ -54,7 +54,7 @@ namespace FoodStockChecker.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Category,Name,Wage,ExpireDate")] food food)
+        public async Task<IActionResult> Create([Bind("Id,Category,Name,Weight,ExpireDate")] food food)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace FoodStockChecker.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,Name,Wage,ExpireDate")] food food)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Category,Name,Weight,ExpireDate")] food food)
         {
             if (id != food.Id)
             {

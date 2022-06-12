@@ -22,7 +22,13 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Zapasy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="foods" asp-action="Index">Zapasy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Przepisy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Szukaj</a>
                         </li>
 
                     </ul>
@@ -31,7 +37,9 @@
         </nav>
     </header>
     <div class="container">
+
         <main role="main" class="pb-3">
+
             @RenderBody()
         </main>
     </div>
